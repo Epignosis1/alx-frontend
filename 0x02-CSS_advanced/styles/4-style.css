@@ -9,9 +9,12 @@
   --font-family-title: Helvetica Neue, Helvetica, Arial, sans-serif;
 }
 
+/* Effortless transitions when scrolling */
 html {
   scroll-behavior: smooth;
 }
+
+/* Foreground colors */
 
 body {
   color: var(--text-color);
@@ -24,8 +27,9 @@ h3,
 h4,
 h5,
 h6 {
-  font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
+  font-family: var(--font-family-title);
 }
+
 a {
   color: var(--text-color);
 }
@@ -33,6 +37,7 @@ a {
 .visually-hidden {
   display: none;
 }
+
 .card-category {
   color: var(--color-primary);
 }
