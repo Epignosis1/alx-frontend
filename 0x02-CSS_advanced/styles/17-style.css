@@ -376,6 +376,12 @@ template {
   --section-tagline-transform: uppercase;
   --section-title-margin: 0;
   --section-title-color: var(--color-black);
+  --section-padding: 5rem 0;
+  --section-header-padding: 0 0 3rem;
+  --section-body-padding: 0 0 3rem;
+  --section-footer-padding: 3rem 0 0;
+  --section-footer-align: center;
+  --footer-padding: 5rem 0 1rem;
 }
 
 /* universal box-sizing */
@@ -437,8 +443,22 @@ a:active {
   color: var(--color-primary);
 }
 
+.section {
+  padding: var(--section-padding);
+}
+
 .section-header {
   text-align: var(--section-header-align);
+  padding: var(--section-header-padding);
+}
+
+.section-body {
+  padding: var(--section-body-padding);
+}
+
+.section-footer {
+  padding: var(--section-footer-padding);
+  text-align: var(--section-footer-align);
 }
 
 .section-title {
@@ -461,5 +481,7 @@ a:active {
   margin-left: auto;
   margin-right: auto;
 }
-.col {
+
+.footer {
+  padding: var(--footer-padding);
 }
